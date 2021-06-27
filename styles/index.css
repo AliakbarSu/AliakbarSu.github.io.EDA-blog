@@ -1,0 +1,39 @@
+
+
+
+nav {
+    background-color: black;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-items {
+
+}
+
+.nav-links {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+}
+
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.footer-links {
+    display: inline-block;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
