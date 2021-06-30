@@ -1,0 +1,28 @@
+
+
+#content {
+    margin-top: 50px;
+}
+
+#main-heading {
+font-size: 25px;
+}
+
+.posts-container {
+    padding: 23px;
+}
+
+#posts-list {
+    list-style: initial;
+}
+
+.post-links {
+    text-decoration: underline;
+    color: #272727;
+}
+
+.post-links:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: #0e0e0e;
+}

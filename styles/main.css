@@ -19,8 +19,15 @@ time, mark, audio, video {
     background:transparent;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     line-height:1;
+    position: relative;
+    padding-bottom: 90px;
+    min-height: 100%;
 }
 
 article,aside,details,figcaption,figure,

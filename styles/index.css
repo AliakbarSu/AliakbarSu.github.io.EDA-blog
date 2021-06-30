@@ -11,15 +11,26 @@ ul {
     justify-content: space-around;
 }
 
+#header {
+    font-family: sans-serif;
+}
+
 .nav-items {
 
 }
 
 .nav-links {
     display: inline-block;
-    color: white;
+    color: #f7f7f7;
     text-decoration: none;
-    padding: 12px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.nav-links:hover, .footer-links:hover {
+    transition: 0.3s;
+    color: #e4e4e4;
+
 }
 
 
@@ -29,11 +40,24 @@ ul {
     right: 0;
     width: 100%;
     background-color: black;
+    font-family: sans-serif;
 }
 
 .footer-links {
     display: inline-block;
-    color: white;
-    padding: 12px;
+    color: #f7f7f7;
     text-decoration: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+main {
+    padding: 12px;
+}
+
+#content {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    font-family: sans-serif;
 }
