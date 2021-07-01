@@ -12,6 +12,10 @@ font-size: 25px;
     padding: 23px;
 }
 
+.post-items {
+    margin-bottom: 10px;
+}
+
 #posts-list {
     list-style: initial;
 }
