@@ -13,6 +13,13 @@
     padding-top: 60px;
 }
 
+.post-sub-heading {
+    font-size: 25px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    padding-top: 60px;
+}
+
 .paragraphs {
     font-size: 16px;
     color: #616161;
@@ -44,4 +51,20 @@
 
 .publication-text {
     padding-left: 10px;
+}
+
+.code {
+    background-color: #e8e8e8;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 40px 0;
+}
+
+.space-code {
+    margin: 10px 0;
+    display: block;
+}
+
+.code-element {
+    color: #6060e2;
 }
