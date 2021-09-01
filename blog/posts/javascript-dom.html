@@ -1,97 +1,148 @@
 <html>
   <head>
-    <title>Ali Sultani - What are the differences between relative, absolute, and fixed positioning?</title>
-    <link href="../../styles/main.css" rel="stylesheet" type="text/css"> 
-    <link href="../../styles/index.css" rel="stylesheet" type="text/css">
-    <link href="../../styles/post.css" rel="stylesheet" type="text/css">
+    <title>
+      Ali Sultani - What are the differences between relative, absolute, and
+      fixed positioning?
+    </title>
+    <link href="../../styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="../../styles/index.css" rel="stylesheet" type="text/css" />
+    <link href="../../styles/post.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        #content {
-            width: 80%;
-        }
+      #content {
+        width: 80%;
+      }
     </style>
-    </head>
+  </head>
   <body>
-
     <div id="header">
       <nav>
         <ul>
-          <li class="nav-items"><a class="nav-links" href="../../index.html">Home</a></li>
-          <li class="nav-items"><a class="nav-links" href="../../blog/template.html">Blog Posts</a></li>
-          <li class="nav-items"><a class="nav-links" href="../../index.html">About Me</a></li>
+          <li class="nav-items">
+            <a class="nav-links" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-links" href="../../blog/template.html">Blog Posts</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-links" href="../../index.html">About Me</a>
+          </li>
         </ul>
       </nav>
     </div>
 
-
     <main>
-        <div id="content">
+      <div id="content">
+        <div id="publication-details">
+          <span class="publication-headers">Published By: </span>
+          <p class="publication-text">Ali Sultani</p>
+          <span class="publication-headers">On: </span>
+          <p class="publication-text">13th July 2021</p>
+        </div>
+        <h1 class="main-post-heading">JavaScript Fundamentals</h1>
+        <p class="paragraphs">
+          Javascript is what makes a website interactive and by interactive I
+          mean actionable for example when you click on button on a website, the
+          code that tells when the button is clicked play the sound is written
+          in JavaScript. HTML and CSS are just there to display content and
+          style those content so they cannot make your webpage interactive.
+          However, it is worth mentioning that there are some HTML element that
+          are interactive by default for example clicking on a button that has
+          the type 'submit' make make the HTML form to pass the form inputs to a
+          web address e.g http://something.
+        </p>
+        <p class="paragraphs">
+          The browser where you Javascript codes are executed run them in an
+          order from top to bottom so if you write some code at the top of a
+          JavaScript file that code will be executed first and then the code
+          that is sitting at the bottom of that JavaScript file. There might be
+          instances where you want a code to be executed multiple times in a row
+          for example you might want the browser replay a song in a loop unless
+          the user presses stop. This is where loops comes in you can surround
+          the specific code that is responsible for replaying the song inside a
+          loop statement and set the condition to the user's response. Now the
+          browser starts reading and executing your codes from the start of the
+          JS file and when it reaches to the loop statement it executes the code
+          inside the loop until the condition on the loop statement is true,
+          once it is false it continues to execute the rest of the codes as
+          usual. So you can use loop statement to change the flow of code
+          execution in JavaScript.
+        </p>
+        <div class="code">
+          <p>
+            // Some other code
 
-            <div id="publication-details">
-                <span class="publication-headers">Published By: </span>
-                <p class="publication-text">Ali Sultani</p>
-                <span class="publication-headers">On: </span>
-                <p class="publication-text">13th July 2021</p>
-            </div>
-            <h1 class="main-post-heading">JavaScript Fundamentals</h1>
-            <p class="paragraphs">
-              Javascript is what makes a website interactive and by interactive I mean actionable for example when you click on button on a website, the code that tells when the button is clicked play the sound is written in JavaScript. HTML and CSS are just there to display content and style those content so they cannot make your webpage interactive. However, it is worth mentioning that there are some HTML element that are interactive by default for example clicking on a button that has the type 'submit' make make the HTML form to pass the form inputs to a web address e.g http://something. 
-            </p>
-            <p class="paragraphs">
-              The browser where you Javascript codes are executed run them in an order from top to bottom so if you write some code at the top of a JavaScript file that code will be executed first and then the code that is sitting at the bottom of that JavaScript file. There might be instances where you want a code to be executed multiple times in a row for example you might want the browser replay a song in a loop unless the user presses stop. This is where loops comes in you can surround the specific code that is responsible for replaying the song inside a loop statement and set the condition to the user's response. Now the browser starts reading and executing your codes from the start of the JS file and when it reaches to the loop statement it executes the code inside the loop until the condition on the loop statement is true, once it is false it continues to execute the rest of the codes as usual. So you can use loop statement to change the flow of code execution in JavaScript.
-            </p>
-            <div class="code">
-              <p>
-                // Some other code
+            <span class="space-code"></span>
 
-                <span class="space-code"></span>
+            loopTill(userReplay == true) {
 
-                loopTill(userReplay == true) {
+            <span class="space-code"></span>
 
-                <span class="space-code"></span>
+            // the code responsible for replaying the song
 
-                  // the code responsible for replaying the song
+            <span class="space-code"></span>
+            }
+            <span class="space-code"></span>
+            // The rest of the code
+          </p>
+        </div>
 
-                <span class="space-code"></span>
-                }
-                <span class="space-code"></span>
-                // The rest of the code
-              </p>
-            </div>
+        <p class="paragraphs">
+          Functions in JavaScript allows you to run a specific piece of code
+          multiple times in different part of your JS file without having to
+          copy and paste your code in multiple places. It is like a container
+          that you could put your code in and name that container something
+          declarative e.g playSong which you can run later in a different part
+          of your code just by specifying the name of that function.
+        </p>
+        <div class="code">
+          <p>
+            // The code inside playSong is not run at this time
+            <span class="space-code"></span>
+            playSong() {
+            <span class="space-code"></span>
+            // Your code that play a song in the browser
+            <span class="space-code"></span>
+            }
 
-            <p class="paragraphs">
-              Functions in JavaScript allows you to run a specific piece of code multiple times in different part of your JS file without having to copy and paste your code in multiple places. It is like a container that you could put your code in and name that container something declarative e.g playSong which you can run later in a different part of your code just by specifying the name of that function. 
-            </p>
-            <div class="code">
-              <p>
-                // The code inside playSong is not run at this time
-                <span class="space-code"></span>
-                playSong() {
-                  <span class="space-code"></span>
-                  // Your code that play a song in the browser
-                  <span class="space-code"></span>
-                }
-
-                <span class="space-code"></span>
-                // This will run the code inside playSong function 
-                playSong();
-
-              </p>
-            </div>
-            <p class="paragraphs">
-              The DOM is a representation of all the element inside the HTML document i.e html file. It is sorted in a tree like shape where Window which is the root of the tree and each html element is a branch of that tree. Each element is a branch of its parent element. For example if you have a <code class="code-element">&lt;p></code> inside a <code class="code-element">&lt;div></code> the you can access the <code class="code-element">&lt;p></code> element through <code class="code-element">&lt;div></code> object, although there are ways to access it directly as well. 
-            </p>
-            <img class="illustrations" src="../images/dom-representation.png" alt="JS DOM dom-representation illustration"/>
-            <p class="paragraphs">
-              DevTools are browser's features which allow you to access and interact with the DOM on the fly you could add, edit, and delete elements in the DOM. It also gives you other functionality that are very helpful when developing a web app for example you could get statistic on how fast the pages are loading which files are loading and a bunch of other features.
-            </p>
-          </div>
+            <span class="space-code"></span>
+            // This will run the code inside playSong function playSong();
+          </p>
+        </div>
+        <p class="paragraphs">
+          The DOM is a representation of all the element inside the HTML
+          document i.e html file. It is sorted in a tree like shape where Window
+          which is the root of the tree and each html element is a branch of
+          that tree. Each element is a branch of its parent element. For example
+          if you have a <code class="code-element">&lt;p></code> inside a
+          <code class="code-element">&lt;div></code> the you can access the
+          <code class="code-element">&lt;p></code> element through
+          <code class="code-element">&lt;div></code> object, although there are
+          ways to access it directly as well.
+        </p>
+        <img
+          class="illustrations"
+          src="../images/dom-representation.png"
+          alt="JS DOM dom-representation illustration"
+        />
+        <p class="paragraphs">
+          DevTools are browser's features which allow you to access and interact
+          with the DOM on the fly you could add, edit, and delete elements in
+          the DOM. It also gives you other functionality that are very helpful
+          when developing a web app for example you could get statistic on how
+          fast the pages are loading which files are loading and a bunch of
+          other features.
+        </p>
+      </div>
     </main>
 
     <footer id="footer">
-        <p id="copyright">&copy; Ali Sultani All Rights Reserved</p>
-        <ul>
-          <li class="footer-items"><a class="footer-links" href="../../blog/template.html">All Posts</a></li>
-        </ul>
-      </footer>
-    </body>
-  </html>
+      <p id="copyright">&copy; Ali Sultani All Rights Reserved</p>
+      <ul>
+        <li class="footer-items">
+          <a class="footer-links" href="../../blog/template.html">All Posts</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

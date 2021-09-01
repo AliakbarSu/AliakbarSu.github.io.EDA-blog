@@ -1,70 +1,112 @@
 #content {
-    font-family: sans-serif;
-    padding: 12px;
-    width: 90%;
-    margin: auto;
-    padding-top: 60px;
+  font-family: sans-serif;
+  padding: 12px;
+  width: 90%;
+  margin: auto;
+  padding-top: 60px;
 }
 
 .main-post-heading {
-    font-size: 35px;
-    line-height: 40px;
-    margin-bottom: 40px;
-    padding-top: 60px;
+  font-size: 1.6rem;
+  line-height: 35px;
+  margin-bottom: 40px;
+  padding-top: 60px;
 }
 
 .post-sub-heading {
-    font-size: 25px;
-    line-height: 40px;
-    margin-bottom: 15px;
-    padding-top: 60px;
+  font-size: 25px;
+  line-height: 40px;
+  margin-bottom: 15px;
+  padding-top: 60px;
 }
 
 .paragraphs {
-    font-size: 16px;
-    color: #616161;
-    line-height: 25px;
-    margin-top: 25px;
+  font-size: 16px;
+  color: #616161;
+  line-height: 25px;
+  margin-top: 25px;
+  width: 100%;
 }
 
 .illustrations {
-    border: 2px solid #d6d6d6;
-    border-radius: 5px;
-    margin: 25px auto 25px auto;
+  border: 2px solid #d6d6d6;
+  border-radius: 5px;
+  margin: 25px auto 25px auto;
+  width: 100%;
 }
 
 #publication-details {
-    padding-bottom: 25px;
-    border-bottom: 1px solid #f1f1f1;
-    display: flex;
-    color: #616161;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #f1f1f1;
+  display: flex;
+  color: #616161;
 }
 
 .publication-headers {
-    
-    font-weight: bold;
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 0.7rem;
 }
 
 .publication-headers:not(:first-child) {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .publication-text {
-    padding-left: 10px;
+  padding-left: 10px;
+  padding-left: 10px;
+  font-size: 0.6rem;
 }
 
 .code {
-    background-color: #e8e8e8;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 40px 0;
+  background-color: #e8e8e8;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 40px 0;
 }
 
 .space-code {
-    margin: 10px 0;
-    display: block;
+  margin: 10px 0;
+  display: block;
 }
 
 .code-element {
-    color: #6060e2;
+  color: #6060e2;
+}
+
+@media only screen and (min-width: 768px) {
+  #content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .paragraphs {
+    width: 57%;
+  }
+
+  .illustrations {
+    width: 40%;
+  }
+
+  .publication-text {
+    font-size: 1.1rem;
+  }
+
+  .publication-headers {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-post-heading {
+    font-size: 2rem;
+    line-height: 45px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-post-heading {
+    font-size: 3rem;
+    line-height: 50px;
+  }
 }
